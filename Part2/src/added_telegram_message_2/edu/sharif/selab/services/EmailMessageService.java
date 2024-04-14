@@ -18,14 +18,11 @@ public class EmailMessageService implements MessageService{
     }
 
     public boolean validateEmailAddress(String email) {
-        // Regular expression pattern for validating email addresses
         String emailRegex = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
 
-        // Compile the pattern into a regex Pattern object
         Pattern pattern = Pattern.compile(emailRegex);
 
-        // Check if the email string matches the regex pattern
         return pattern.matcher(email).matches();
     }
-    
+
 }

@@ -13,18 +13,15 @@ public class TelegramMessageService implements MessageService{
         if(validateTelegramID(telegramMessage.getSourceTelegramID()) && validateTelegramID(telegramMessage.getTargetTelegramID())){
             System.out.println("Sending a SMS from " + telegramMessage.getSourceTelegramID() + " to " + telegramMessage.getTargetTelegramID() + " with content : " + telegramMessage.getContent());
         }else{
-            throw new IllegalArgumentException("Email Address is Not Correct!");
+            throw new IllegalArgumentException("Tlg ID is Not Correct!");
         }
     }
 
     public boolean validateTelegramID(String ID) {
-        // Regular expression pattern for validating email addresses
-        String emailRegex = "^@[a-zA-Z0-9_.+-]";
+        String idRegex = "^@[a-zA-Z0-9_.+-]*";
 
-        // Compile the pattern into a regex Pattern object
-        Pattern pattern = Pattern.compile(emailRegex);
+        Pattern pattern = Pattern.compile(idRegex);
 
-        // Check if the email string matches the regex pattern
         return pattern.matcher(ID).matches();
     }
 }
