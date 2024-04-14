@@ -1,7 +1,8 @@
-package edu.sharif.selab.services;
+package added_telegram_message.edu.sharif.selab.services;
 
-import edu.sharif.selab.models.EmailMessage;
-import edu.sharif.selab.models.SmsMessage;
+import added_telegram_message.edu.sharif.selab.models.EmailMessage;
+import added_telegram_message.edu.sharif.selab.models.SmsMessage;
+import added_telegram_message.edu.sharif.selab.models.TelegramMessage;
 
 public class SmsMessageService implements MessageService{
     @Override
@@ -16,6 +17,11 @@ public class SmsMessageService implements MessageService{
     @Override
     public void sendEmailMessage(EmailMessage emailMessage) {
         //Empty Body!
+    }
+
+    @Override
+    public void sendTelegramMessage(TelegramMessage telegramMessage) {
+        //Empty body
     }
 
     private boolean validatePhoneNumber(String phoneNumber) {

@@ -1,9 +1,12 @@
-import edu.sharif.selab.models.EmailMessage;
-import edu.sharif.selab.models.Message;
-import edu.sharif.selab.models.SmsMessage;
-import edu.sharif.selab.services.EmailMessageService;
-import edu.sharif.selab.services.MessageService;
-import edu.sharif.selab.services.SmsMessageService;
+package added_telegram_message;
+
+import added_telegram_message.edu.sharif.selab.models.EmailMessage;
+import added_telegram_message.edu.sharif.selab.models.Message;
+import added_telegram_message.edu.sharif.selab.models.SmsMessage;
+import added_telegram_message.edu.sharif.selab.models.TelegramMessage;
+import added_telegram_message.edu.sharif.selab.services.EmailMessageService;
+import added_telegram_message.edu.sharif.selab.services.MessageService;
+import added_telegram_message.edu.sharif.selab.services.SmsMessageService;
 
 import java.util.Scanner;
 
@@ -21,6 +24,7 @@ public class Main {
 
             System.out.println("In order to send Sms message enter 1");
             System.out.println("In order to send Email message enter 2");
+            System.out.println("In order to send Telegram message enter 3");
             System.out.println("In order to Exit, Enter 0");
 
             userAnswer= scanner.nextInt();
@@ -55,6 +59,19 @@ public class Main {
                     content = scanner.next();
                     emailMessage.setContent(content);
                     message = emailMessage;
+                    break;
+                case 3:
+                    TelegramMessage telegramMessage = new TelegramMessage();
+                    System.out.print("Enter source ID : ");
+                    source = scanner.next();
+                    telegramMessage.setSourceTelegramID(source);
+                    System.out.print("Enter target ID : ");
+                    target = scanner.next();
+                    telegramMessage.setTargetTelegramID(target);
+                    System.out.println("Write Your Message : ");
+                    content = scanner.next();
+                    telegramMessage.setContent(content);
+                    message = telegramMessage;
                     break;
             }
 

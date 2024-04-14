@@ -1,4 +1,4 @@
-package edu.sharif.selab.models;
+package added_telegram_message.edu.sharif.selab.models;
 
 public class EmailMessage extends Message{
     private String sourceEmailAddress;
