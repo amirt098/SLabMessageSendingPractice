@@ -27,13 +27,13 @@
 <p><strong>ردیف</strong></p>
 </td>
 <td width="198">
-<p><strong>محل اعمال تغییرات (کلاس/واسط)</strong></p>
+<p><strong>&nbsp; محل اعمال تغییرات (کلاس/واسط)</strong></p>
 </td>
 <td width="141">
-<p><strong>عنوان تغییر</strong></p>
+<p><strong>&nbsp; عنوان تغییر</strong></p>
 </td>
 <td width="292">
-<p><strong>شرحی کوتاه از تغییر</strong></p>
+<p><strong>&nbsp; شرحی کوتاه از تغییر</strong></p>
 </td>
 </tr>
 <tr>
@@ -44,10 +44,10 @@
 <p>MessageService</p>
 </td>
 <td width="141">
-<p>افزودن تابع ارسال پیام تلگرامی</p>
+<p>&nbsp; افزودن تابع ارسال پیام تلگرامی</p>
 </td>
 <td width="292">
-<p>افزودن یک تابع void با عنوان sendTelegramMessage</p>
+<p>&nbsp; افزودن یک تابع void با عنوان sendTelegramMessage</p>
 </td>
 </tr>
 
@@ -62,37 +62,52 @@
 <p>افزودن تابع sendtelegrammessage </p>
 </td>
 <td width="292">
-<p>به علت وجود آن در پدر که </p>
+<p>&nbsp; به علت وجود آن در پدر </p>
 </td>
 </tr>
 <tr>
 <td width="64">
-<p><strong>&nbsp;</strong></p>
+<p><strong>3</strong></p>
 </td>
 <td width="198">
-<p>&nbsp;</p>
+<p>telegramMessage</p>
 </td>
 <td width="141">
-<p>&nbsp;</p>
+<p>افزودن مدل</p>
 </td>
 <td width="292">
-<p>&nbsp;</p>
+<p>&nbsp; برای کارایی مورد نظر بایستی اضافه شود</p>
 </td>
 </tr>
 <tr>
 <td width="64">
-<p><strong>&nbsp;</strong></p>
+<p><strong>4</strong></p>
 </td>
 <td width="198">
-<p>&nbsp;</p>
+<p>telegramService</p>
 </td>
 <td width="141">
-<p>&nbsp;</p>
+<p>&nbsp; افزودن telegramservice و تابع validation آن</p>
 </td>
 <td width="292">
-<p>&nbsp;</p>
+<p>&nbsp; برای افزودن service مورد نظر</p>
 </td>
 </tr>
+<tr>
+<td width="64">
+<p><strong>5</strong></p>
+</td>
+<td width="198">
+<p>main</p>
+</td>
+<td width="141">
+<p>&nbsp; افزودن بخش راهنمایی و پاس دادن پارامتر ها</p>
+</td>
+<td width="292">
+<p></p>
+</td>
+</tr>
+<tr>
 </tbody>
 </table>
 
